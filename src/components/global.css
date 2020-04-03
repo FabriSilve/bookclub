@@ -1,0 +1,19 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #171a1c;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}

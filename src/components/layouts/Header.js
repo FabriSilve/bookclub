@@ -48,8 +48,8 @@ const Header = () => (
         Home
       </StyledItem>
       <StyledMenuItems>
-        <StyledItem as={Link} to="/calendar">
-          Calendario
+        <StyledItem as={Link} to="/results">
+          Risultati
         </StyledItem>
         <StyledItem as={Link} to="/players">
           Giocatori

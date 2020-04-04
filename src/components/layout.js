@@ -5,7 +5,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./global.css"
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -21,12 +20,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `1rem auto`,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

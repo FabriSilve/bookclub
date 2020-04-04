@@ -1,12 +1,10 @@
 import { Link } from "gatsby"
 import React from "react"
 
-import { Navbar } from 'react-bootstrap';
-
 
 const Header = () => (
-  <Navbar bg="dark" variant="dark">
-    <Navbar.Brand>
+  <header bg="dark" variant="dark">
+    <span>
       <Link
         to="/"
         style={{
@@ -16,8 +14,8 @@ const Header = () => (
       >
         Book Club
       </Link>
-    </Navbar.Brand>
-  </Navbar>
+    </span>
+  </header>
 )
 
 export default Header

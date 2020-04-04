@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{"nFd+":function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),r=t.n(a),l=t("Bl7J"),o=t("vrFN");n.default=function(){return r.a.createElement(l.a,null,r.a.createElement(o.a,{title:"Giocatori"}),r.a.createElement("h1",null,"Giocatori"),r.a.createElement("p",null,"Work in progress"))}}}]);
+//# sourceMappingURL=component---src-pages-players-js-23e9056a072310c16f0d.js.map

@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 
 const StyledFooter = styled.footer`
-  width: 85%;
+  width: 100%;
+  max-width: 65rem;
   display: flex;
   align-items: center;
   justify-content: center;

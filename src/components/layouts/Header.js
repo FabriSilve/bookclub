@@ -18,7 +18,7 @@ const StyledContent = styled.div`
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
   background-color: #171a1c;
   border-radius: 0 0 20px 20px;
@@ -28,22 +28,36 @@ const StyledItem = styled.span`
   padding: 0.5rem 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
+  color: #ddd;
+  text-decoration: none;
+  margin-right: 1rem;
+`;
+
+const StyledMenuItems = styled.div`
+  display: none;
+  @media (min-width: ${500 / 16}em) {
+    display: flex;
+  }
 `;
 
 
 const Header = () => (
   <StyledHeader bg="dark" variant="dark">
     <StyledContent>
-      <StyledItem
-        as={Link}
-        to="/"
-        style={{
-          color: `white`,
-          textDecoration: `none`,
-        }}
-      >
-        Book Club
+      <StyledItem as={Link} to="/">
+        Home
       </StyledItem>
+      <StyledMenuItems>
+        <StyledItem as={Link} to="/calendar">
+          Calendario
+        </StyledItem>
+        <StyledItem as={Link} to="/players">
+          Giocatori
+        </StyledItem>
+        <StyledItem as={Link} to="/matches">
+          Partite
+        </StyledItem>
+      </StyledMenuItems>
     </StyledContent>
   </StyledHeader>
 )

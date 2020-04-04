@@ -7,7 +7,7 @@ const StyledSection = styled.section`
   padding: 1rem;
   margin: 1rem 0;
   width: 90%;
-  max-width: 60rem;
+  max-width: 65rem;
   border-radius: 10px;
 `;
 

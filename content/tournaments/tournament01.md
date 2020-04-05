@@ -1,0 +1,22 @@
+---
+name: 'Primavera 2020'
+date: '2020-04-06'
+days:
+  - [
+      ['arsenal', 'ajax'],
+      ['milan', 'lazio'],
+      ['napoli', 'inter'],
+      ['olympique-lyonnaise', 'everton'],
+      ['roma', 'chelsea'],
+      ['tottenham', 'bayer-leverkusen'],
+      ['valencia', 'atletico-madrid'],
+    ]
+  - [
+      ['ajax', 'atletico-madrid'],
+      ['manchester-utd', 'milan'],
+      ['lazio', 'napoli'],
+      ['inter', 'olympique-lyonnaise'],
+      ['everton', 'roma'],
+      ['chelsea', 'tottenham'],
+      ['bayer-leverkusen', 'valencia'],
+    ]

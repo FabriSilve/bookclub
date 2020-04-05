@@ -51,9 +51,6 @@ const Header = () => (
         <StyledItem as={Link} to="/results">
           Risultati
         </StyledItem>
-        <StyledItem as={Link} to="/players">
-          Giocatori
-        </StyledItem>
         <StyledItem as={Link} to="/matches">
           Partite
         </StyledItem>

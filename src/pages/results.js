@@ -4,44 +4,60 @@ import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import Section from '../components/layouts/Section'
+
 
 export const resultsQuery = graphql`
-  query resultsQuery {
+  query tournamentsQuery {
     allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/(Primavera2020)/"  }}
-      sort: { order: ASC, fields: [frontmatter___day]}
-    ) {
-      edges {
-        node {
-          frontmatter {
-            day
-            matches
-          }
+    	filter: {fileAbsolutePath: {regex: "/(tournaments)/"}},
+    	sort: {order: ASC, fields: [frontmatter___date]}) {
+    edges {
+      node {
+        frontmatter {
+          name
+          date
+          days
         }
       }
     }
   }
+}
 `
 
 const Results = (props) => {
   console.log(props.data.allMarkdownRemark)
-  const days = props.data.allMarkdownRemark;
+  const tournaments = props.data.allMarkdownRemark;
   return (
     <Layout>
       <SEO title="Risultati" />
-      <h1>Risultati Partite</h1>
-      <p>Work in progress</p>
-      {days.edges.map(({ node }, i) => (
-        <section key={i}>
-          <h3>Giornata {node.frontmatter.day}</h3>
-          {node.frontmatter.matches.map((value, i) => (
-            <div key={i}>
-              {value.map((value, i) => (<span key={i}>{value} :</span>))}
-            </div>
+      {tournaments.edges.map(({ node }) => (
+        <Section key={node.frontmatter.name}>
+          <h1>{node.frontmatter.name}</h1>
+          <h2>{node.frontmatter.date}</h2>
+          {node.frontmatter.days.map((matches, i) => (
+            <table key={i} style={{ width: '100%', margin: '1rem'}}>
+              <thead>
+                <tr>
+                  <th>casa</th>
+                  <th>trasferta</th>
+                  <th>andata</th>
+                  <th>ritorno</th>
+                </tr>
+              </thead>
+              <tbody>
+                {matches.map((teams, i) => (
+                  <tr key={i}>
+                    <td>{teams[0]}</td>
+                    <td>{teams[1]}</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           ))}
-          <hr/>
-          <br />
-        </section>
+        </Section>
       ))}
     </Layout>
   );

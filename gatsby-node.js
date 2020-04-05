@@ -1,13 +1,12 @@
 const path = require("path")
 
-// const { createFilePath, createFileNode } = require(`gatsby-source-filesystem`)
 
-exports.createPages = ({ actions, graphql }) => {
+exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
 
-  return new Promise((resolve, reject) => {
-    resolve(graphql(`
-    {
+  const matchTemplate = path.resolve(`src/templates/match.js`);
+  const matchResult = await graphql(`
+    query {
       allMarkdownRemark(
         filter: {fileAbsolutePath: {regex: "/(matches)/"}},
         sort: { order: DESC, fields: [frontmatter___date] }
@@ -29,23 +28,12 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
-      if (result.errors) {
-        console.log(result.errors)
-        return reject(result.errors)
-      }
-
-      const matchTemplate = path.resolve(`src/templates/match.js`);
-
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        createPage({
-          path: `match/${node.frontmatter.home.team}-vs-${node.frontmatter.visitor.team}`,
-          component: matchTemplate,
-          context: { ...node.frontmatter },
-        })
-      })
-      return
+  `);
+  matchResult.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: `match/${node.frontmatter.home.team}-vs-${node.frontmatter.visitor.team}`,
+      component: matchTemplate,
+      context: { ...node.frontmatter },
     })
-    )
   })
 }

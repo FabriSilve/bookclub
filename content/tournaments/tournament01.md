@@ -1,5 +1,5 @@
 ---
-name: 'Primavera 2020'
+name: 'Primavera2020'
 date: '2020-04-06'
 days:
   - [

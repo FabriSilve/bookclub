@@ -1,20 +1,20 @@
 ---
-tournament: Primavera2020
+tournament: 'Primavera2020'
 dateStart: '2020-04-06'
 teams:
-  - ajax
-  - arsenal
-  - atletico-madrid
-  - bayern-leverkusen
-  - chelsea
-  - everton
-  - inter
-  - lazio
-  - manchester-utd
-  - milan
-  - napoli
-  - olympique-lyonnaise
-  - roma
-  - tottenham
-  - valencia
+  - 'ajax'
+  - 'arsenal'
+  - 'atletico-madrid'
+  - 'bayern-leverkusen'
+  - 'chelsea'
+  - 'everton'
+  - 'inter'
+  - 'lazio'
+  - 'manchester-utd'
+  - 'milan'
+  - 'napoli'
+  - 'olympique-lyonnaise'
+  - 'roma'
+  - 'tottenham'
+  - 'valencia'
 ---

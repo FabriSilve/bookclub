@@ -1,46 +1,56 @@
 import React from "react"
-import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import Section from '../components/layouts/Section';
 
+import useMatches from '../hooks/useMatches';
+import useLeagues from '../hooks/useLeagues';
 
-export const leaguesQuery = graphql`
-  query leaguesQuery {
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: {regex: "/(teams)/"  }}
-      sort: { order: ASC, fields: [frontmatter___dateStart]}
-    ) {
-      edges {
-        node {
-          frontmatter {
-            tournament
-            teams
-            dateStart
-          }
-        }
-      }
-    }
-  }
-`
+import getLeaguesResult from '../utils/getLeaguesResult';
+
 
 const IndexPage = (props) => {
-  const leagues = props.data.allMarkdownRemark;
-
+  const leagues = useLeagues();
+  const matches = useMatches();
+  const results = getLeaguesResult(leagues, matches);
+  console.log(results);
   return (
     <Layout>
       <SEO title="Home" />
-      {leagues.edges.map(({ node }) => (
-        <Section key="node.frontmatter.tournament">
-          <h1>{node.frontmatter.tournament}</h1>
-          <h2>{node.frontmatter.dateStart}</h2>
-          <ul>
-            {node.frontmatter.teams.map((value) => (
-              <li key={value}>{`${value}`.toUpperCase()}</li>
-            ))}
-          </ul>
+      {results.map((result) => (
+        <Section key={result.name}>
+          <h1>{result.name}</h1>
+          <h2>{result.start}</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Squadra</th>
+                <th>Punti</th>
+                <th>Partite</th>
+                <th>Vint.</th>
+                <th>Pare.</th>
+                <th>Pers.</th>
+                <th>GF</th>
+                <th>GS</th>
+              </tr>
+            </thead>
+            <tbody>
+              {result.ladder.map((team) => (
+                <tr key={team.team}>
+                  <td>{team.team}</td>
+                  <td>{team.points}</td>
+                  <td>{team.nMatches}</td>
+                  <td>{team.wins}</td>
+                  <td>{team.draws}</td>
+                  <td>{team.losts}</td>
+                  <td>{team.gDone}</td>
+                  <td>{team.gReceived}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </Section>
       ))}
     </Layout>

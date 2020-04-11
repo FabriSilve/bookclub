@@ -6,16 +6,11 @@ import Layout from '../components/layout';
 import Section from '../components/layouts/Section';
 
 import StyledStart from '../components/elements/StyledStart';
-// import StyledTitle from '../components/elements/StyledTitle';
 
 import getEmblem from '../utils/getEmblems';
 import formatTeamName from '../utils/formatTeamName';
 import formatDate from '../utils/formatDate';
 
-
-const StyledTitle = styled.h2`
-  text-align: center;
-`;
 
 const StyledCel = styled.div`
   display: flex;
@@ -24,7 +19,11 @@ const StyledCel = styled.div`
   align-items: center;
   justify-content: center;
 
-  ${StyledTitle} {
+  h2 {
+    text-align: center;
+  }
+
+  h2 {
     margin: 0.2rem;
   }
 
@@ -89,64 +88,64 @@ const Match = ({ pageContext }) => {
             <StyledCel><img src={getEmblem(pageContext.visitor.team)} alt="emblem" /></StyledCel>
           </StyledRow>
           <StyledRow>
-            <StyledCel><StyledTitle>{formatTeamName(pageContext.home.team, false)}</StyledTitle></StyledCel>
+            <StyledCel><h2>{formatTeamName(pageContext.home.team, false)}</h2></StyledCel>
             <StyledCel>vs</StyledCel>
-            <StyledCel><StyledTitle>{formatTeamName(pageContext.visitor.team, false)}</StyledTitle></StyledCel>
+            <StyledCel><h2>{formatTeamName(pageContext.visitor.team, false)}</h2></StyledCel>
           </StyledRow>
           <StyledRow>
-            <StyledCel><StyledTitle>{pageContext.home.goals}</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.home.goals}</h2></StyledCel>
             <StyledCel>Reti</StyledCel>
-            <StyledCel><StyledTitle>{pageContext.visitor.goals}</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.visitor.goals}</h2></StyledCel>
           </StyledRow>
           <StyledRow>
-            <StyledCel><StyledTitle>{pageContext.home.possession}%</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.home.possession}%</h2></StyledCel>
             <StyledCel>Possesso</StyledCel>
-            <StyledCel><StyledTitle>{pageContext.visitor.possession}%</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.visitor.possession}%</h2></StyledCel>
           </StyledRow>
           <StyledRow>
-            <StyledCel><StyledTitle>{pageContext.home.shots} ({pageContext.home.shotsIn})</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.home.shots} ({pageContext.home.shotsIn})</h2></StyledCel>
             <StyledCel>Tiri (in porta)</StyledCel>
-            <StyledCel><StyledTitle>{pageContext.visitor.shots} ({pageContext.visitor.shotsIn})</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.visitor.shots} ({pageContext.visitor.shotsIn})</h2></StyledCel>
           </StyledRow>
           <StyledRow>
-            <StyledCel><StyledTitle>{pageContext.home.faults} ({pageContext.home.offsides})</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.home.faults} ({pageContext.home.offsides})</h2></StyledCel>
             <StyledCel>Falli (fuorigioco)</StyledCel>
-            <StyledCel><StyledTitle>{pageContext.visitor.faults} ({pageContext.visitor.offsides})</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.visitor.faults} ({pageContext.visitor.offsides})</h2></StyledCel>
           </StyledRow>
           <StyledRow>
-            <StyledCel><StyledTitle>{pageContext.home.corners}</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.home.corners}</h2></StyledCel>
             <StyledCel>Calci d'angolo</StyledCel>
-            <StyledCel><StyledTitle>{pageContext.visitor.corners}</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.visitor.corners}</h2></StyledCel>
           </StyledRow>
           <StyledRow>
-            <StyledCel><StyledTitle>{pageContext.home.penalties}</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.home.penalties}</h2></StyledCel>
             <StyledCel>Punizioni</StyledCel>
-            <StyledCel><StyledTitle>{pageContext.visitor.penalties}</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.visitor.penalties}</h2></StyledCel>
           </StyledRow>
           <StyledRow>
-            <StyledCel><StyledTitle>{pageContext.home.passages} ({pageContext.home.passagesSucceded})</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.home.passages} ({pageContext.home.passagesSucceded})</h2></StyledCel>
             <StyledCel>Passaggi (riusciti)</StyledCel>
-            <StyledCel><StyledTitle>{pageContext.visitor.passages} ({pageContext.visitor.passagesSucceded})</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.visitor.passages} ({pageContext.visitor.passagesSucceded})</h2></StyledCel>
           </StyledRow>
           <StyledRow>
-            <StyledCel><StyledTitle>{pageContext.home.cross}</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.home.cross}</h2></StyledCel>
             <StyledCel>Cross</StyledCel>
-            <StyledCel><StyledTitle>{pageContext.visitor.cross}</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.visitor.cross}</h2></StyledCel>
           </StyledRow>
           <StyledRow>
-            <StyledCel><StyledTitle>{pageContext.home.passagesIntercepted}</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.home.passagesIntercepted}</h2></StyledCel>
             <StyledCel>Passaggi intercettati</StyledCel>
-            <StyledCel><StyledTitle>{pageContext.visitor.passagesIntercepted}</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.visitor.passagesIntercepted}</h2></StyledCel>
           </StyledRow>
           <StyledRow>
-            <StyledCel><StyledTitle>{pageContext.home.tackels}</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.home.tackels}</h2></StyledCel>
             <StyledCel>Contrasti</StyledCel>
-            <StyledCel><StyledTitle>{pageContext.visitor.tackels}</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.visitor.tackels}</h2></StyledCel>
           </StyledRow>
           <StyledRow>
-            <StyledCel><StyledTitle>{pageContext.home.saves}</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.home.saves}</h2></StyledCel>
             <StyledCel>Parate</StyledCel>
-            <StyledCel><StyledTitle>{pageContext.visitor.saves}</StyledTitle></StyledCel>
+            <StyledCel><h2>{pageContext.visitor.saves}</h2></StyledCel>
           </StyledRow>
         </StyledGrid>
       </Section>

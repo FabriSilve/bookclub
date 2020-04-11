@@ -41,7 +41,7 @@ const StyledGrid = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   background-color: rgba(200, 200, 200, 0.5);
 
   ${StyledRow}:first-child {

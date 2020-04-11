@@ -8,9 +8,11 @@ import SEO from "../components/seo"
 
 import Section from "../components/layouts/Section"
 
-import getEmblem from '../utils/getEmblems';
-
 import useMatches from '../hooks/useMatches';
+
+import getEmblem from '../utils/getEmblems';
+import formatTeamName from '../utils/formatTeamName';
+import formatDate from '../utils/formatDate';
 
 
 const StyledTeam = styled.div`
@@ -98,18 +100,18 @@ const Matches = () => {
       <SEO title="Partite" />
       {matches.map(({ node }) => (
         <Section key={`${node.frontmatter.home.team}-${node.frontmatter.visitor.team}`}>
-          <h4>{node.frontmatter.date}</h4>
+          <h4>{formatDate(node.frontmatter.date)}</h4>
           <StyledMatch>
             <StyledTeam>
               <img src={getEmblem(node.frontmatter.home.team)} alt="emblem"/>
-              <h1>{node.frontmatter.home.team}</h1>
+              <h1>{formatTeamName(node.frontmatter.home.team)}</h1>
             </StyledTeam>
             <StyledScore>
               <h1>{node.frontmatter.home.goals} - {node.frontmatter.visitor.goals}</h1>
             </StyledScore>
             <StyledTeam>
               <img src={getEmblem(node.frontmatter.visitor.team)} alt="emblem"/>
-              <h1>{node.frontmatter.visitor.team}</h1>
+              <h1>{formatTeamName(node.frontmatter.visitor.team)}</h1>
             </StyledTeam>
           </StyledMatch>
           <StyledLinkContainer>

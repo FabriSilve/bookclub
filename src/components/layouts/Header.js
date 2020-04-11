@@ -30,7 +30,7 @@ const StyledItem = styled.span`
   border-radius: 10px;
   color: #ddd;
   text-decoration: none;
-  margin-right: 1rem;
+  margin: 0 0.5rem;
 `;
 
 const StyledMenuItems = styled.div`

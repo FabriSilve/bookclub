@@ -30,7 +30,7 @@ const StyledTeam = styled.div`
 
   h1 {
     text-transform: uppercase;
-    white-space: nowrap;
+    text-align: center;
     font-size: 1.5rem;
     margin: 0;
   }
@@ -45,22 +45,8 @@ const StyledTeam = styled.div`
   }
 `;
 
-const StyledMatch = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-
-  @media (min-width: ${750 / 16}em) {
-    flex-direction: row;
-    width: 90%;
-  }
-`;
-
 const StyledScore = styled.div`
   width: 100%;
-  max-width: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,6 +63,43 @@ const StyledScore = styled.div`
       font-size: 8rem;
     }
     padding-bottom: 2rem;
+  }
+`;
+
+const StyledMatch = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+
+  ${StyledTeam}:first-child {
+    width: 50%;
+    order: 2;
+  }
+  ${StyledTeam}:last-child {
+    width: 50%;
+    order: 3;
+  }
+  ${StyledScore} {
+    width: 100%;
+    order: 1;
+  }
+
+  @media (min-width: ${750 / 16}em) {
+    ${StyledTeam}:first-child {
+      width: 30%;
+      order: 1;
+    }
+    ${StyledTeam}:last-child {
+      width: 30%;
+      order: 3;
+    }
+    ${StyledScore} {
+      width: 30%;
+      order: 2;
+    }
   }
 `;
 
@@ -106,14 +129,14 @@ const Matches = () => {
           <StyledMatch>
             <StyledTeam>
               <img src={getEmblem(node.frontmatter.home.team)} alt="emblem"/>
-              <h1>{formatTeamName(node.frontmatter.home.team)}</h1>
+              <h1>{formatTeamName(node.frontmatter.home.team, false)}</h1>
             </StyledTeam>
             <StyledScore>
               <h1>{node.frontmatter.home.goals} - {node.frontmatter.visitor.goals}</h1>
             </StyledScore>
             <StyledTeam>
               <img src={getEmblem(node.frontmatter.visitor.team)} alt="emblem"/>
-              <h1>{formatTeamName(node.frontmatter.visitor.team)}</h1>
+              <h1>{formatTeamName(node.frontmatter.visitor.team, false)}</h1>
             </StyledTeam>
           </StyledMatch>
           <StyledLinkContainer>

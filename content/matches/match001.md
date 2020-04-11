@@ -21,7 +21,7 @@ home:
     - 'm. rashford'
     - 'a martial'
 visitor:
-  team: 'arsenal'
+  team: 'milan'
   goals: 0
   possession: 44
   shots: 2

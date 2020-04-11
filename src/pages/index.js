@@ -6,6 +6,9 @@ import SEO from "../components/seo"
 
 import Section from '../components/layouts/Section';
 
+import StyledStart from '../components/elements/StyledStart';
+import StyledTitle from '../components/elements/StyledTitle';
+
 import useMatches from '../hooks/useMatches';
 import useLeagues from '../hooks/useLeagues';
 
@@ -16,7 +19,6 @@ import formatDate from '../utils/formatDate';
 
 const StyledCel = styled.span`
   padding: 0.5rem;
-  width: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +40,7 @@ const StyledGrid = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  background-color: rgba(200, 200, 200, 0.5);
 
   ${StyledRow}:first-child {
     font-weight: bold;
@@ -76,21 +79,6 @@ const StyledGrid = styled.div`
     display: flex;
   }
 `;
-
-const StyledTitle = styled.h1`
-  width: 100%;
-  margin: 1rem 0;
-  text-transform: uppercase;
-  text-align: center;
-`;
-
-const StyledStart = styled.h4`
-  width: 100%;
-  margin: 0.5rem 0;
-  text-align: center;
-  font-weight: 400;
-`;
-
 
 const IndexPage = () => {
   const leagues = useLeagues();

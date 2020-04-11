@@ -20,7 +20,7 @@ const StyledTeam = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
 
   text-decoration: none;
 
@@ -32,6 +32,7 @@ const StyledTeam = styled.div`
     text-transform: uppercase;
     white-space: nowrap;
     font-size: 1.5rem;
+    margin: 0;
   }
 
   @media (min-width: ${750 / 16}em) {
@@ -64,7 +65,6 @@ const StyledScore = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-bottom: 2rem;
 
   h1 {
     font-size: 4rem;
@@ -76,6 +76,7 @@ const StyledScore = styled.div`
     h1 {
       font-size: 8rem;
     }
+    padding-bottom: 2rem;
   }
 `;
 
@@ -86,6 +87,7 @@ const StyledLinkContainer = styled.div`
     color: inherit;
     cursor: pointer;
   }
+  margin: 1rem;
   padding: 0.5rem 1rem;
   border: 2px solid gray;
   border-radius: 5px;
@@ -115,7 +117,7 @@ const Matches = () => {
             </StyledTeam>
           </StyledMatch>
           <StyledLinkContainer>
-            <Link to={`match/${node.frontmatter.home.team}-vs-${node.frontmatter.visitor.team}`}>detagli partita</Link>
+            <Link to={`match/${node.frontmatter.home.team}-vs-${node.frontmatter.visitor.team}`}>Dettagli partita</Link>
           </StyledLinkContainer>
         </Section>
       ))}

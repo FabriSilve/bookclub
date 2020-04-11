@@ -34,10 +34,7 @@ const StyledItem = styled.span`
 `;
 
 const StyledMenuItems = styled.div`
-  display: none;
-  @media (min-width: ${500 / 16}em) {
-    display: flex;
-  }
+  display: flex;
 `;
 
 

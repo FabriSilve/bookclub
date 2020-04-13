@@ -81,7 +81,7 @@ const StyledGrid = styled.div`
 const Match = ({ pageContext }) => {
   return (
     <Layout>
-      <Seo
+      <SEO
         title="Dettagli partita"
         description={`${formatTeamName(pageContext.home.team)} ${pageContext.home.goals} - ${pageContext.visitor.goals} ${formatTeamName(pageContext.visitor.team)}`}
       />

@@ -86,7 +86,10 @@ const IndexPage = () => {
   const results = getLeaguesResult(leagues, matches);
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO
+        title="Club del Libro"
+        description="Classifica torneo"
+      />
       {results.map((result) => (
         <Section key={result.name}>
           <StyledTitle>Torneo: {result.name}</StyledTitle>

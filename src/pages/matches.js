@@ -122,7 +122,10 @@ const Matches = () => {
   const matches = useMatches();
   return (
     <Layout>
-      <SEO title="Partite" />
+      <SEO
+        title="Partite"
+        description="Lista risultati partite"
+      />
       {matches.map(({ node }) => (
         <Section key={`${node.frontmatter.home.team}-${node.frontmatter.visitor.team}`}>
           <h4>{formatDate(node.frontmatter.date)}</h4>

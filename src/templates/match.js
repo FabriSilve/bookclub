@@ -5,6 +5,8 @@ import Layout from '../components/layout';
 
 import Section from '../components/layouts/Section';
 
+import SEO from "../components/seo"
+
 import StyledStart from '../components/elements/StyledStart';
 
 import getEmblem from '../utils/getEmblems';
@@ -79,6 +81,10 @@ const StyledGrid = styled.div`
 const Match = ({ pageContext }) => {
   return (
     <Layout>
+      <Seo
+        title="Dettagli partita"
+        description={`${formatTeamName(pageContext.home.team)} ${pageContext.home.goals} - ${pageContext.visitor.goals} ${formatTeamName(pageContext.visitor.team)}`}
+      />
       <Section>
         <StyledStart>{formatDate(pageContext.date)}</StyledStart>
         <StyledGrid>

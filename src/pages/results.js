@@ -66,7 +66,10 @@ const Results = (props) => {
   const allMatches = useMatches();
   return (
     <Layout>
-      <SEO title="Risultati" />
+      <SEO
+        title="Giornate"
+        description="Tabella scontri andata e ritorno"
+      />
       {tournaments.map(({ node }) => (
         <Section key={node.frontmatter.name}>
           <StyledTitle>Torneo: {node.frontmatter.name}</StyledTitle>

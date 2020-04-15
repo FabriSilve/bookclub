@@ -1,5 +1,5 @@
 ---
-tournament: 'Primavera2020'
+tournament: 'CdL League 2020'
 dateStart: '2020-04-06'
 teams:
   - 'ajax'

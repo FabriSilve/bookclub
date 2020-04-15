@@ -1,5 +1,5 @@
 ---
-name: 'Primavera2020'
+name: 'CdL League 2020'
 date: '2020-04-06'
 days:
   - [

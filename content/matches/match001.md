@@ -19,7 +19,7 @@ home:
   scoorers:
     - 'm. rashford'
     - 'm. rashford'
-    - 'a martial'
+    - 'a. martial'
 visitor:
   team: 'milan'
   goals: 0

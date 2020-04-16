@@ -1,7 +1,7 @@
 ---
 date: '2020-04-07'
 home:
-  team: 'olympique-lyonnaise'
+  team: 'olympique-lyonnais'
   goals: 2
   possession: 61
   shots: 10

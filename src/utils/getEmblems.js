@@ -10,7 +10,7 @@ import lazio from '../images/emblems/lazio.png';
 import manchesterUtd from '../images/emblems/manchester-utd.png';
 import milan from '../images/emblems/milan.png';
 import napoli from '../images/emblems/napoli.png';
-import olympiqueLyonnaise from '../images/emblems/olympique-lyonnaise.png';
+import olympiqueLyonnaise from '../images/emblems/olympique-lyonnais.png';
 import roma from '../images/emblems/roma.png';
 import tottenham from '../images/emblems/tottenham.png';
 import valencia from '../images/emblems/valencia.png';
@@ -27,7 +27,7 @@ const emblems = {
   'manchester-utd': manchesterUtd,
   'milan': milan,
   'napoli': napoli,
-  'olympique-lyonnaise': olympiqueLyonnaise,
+  'olympique-lyonnais': olympiqueLyonnaise,
   'roma': roma,
   'tottenham': tottenham,
   'valencia': valencia,

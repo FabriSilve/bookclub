@@ -13,7 +13,7 @@ teams:
   - 'manchester-utd'
   - 'milan'
   - 'napoli'
-  - 'olympique-lyonnaise'
+  - 'olympique-lyonnais'
   - 'roma'
   - 'tottenham'
   - 'valencia'

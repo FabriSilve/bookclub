@@ -124,7 +124,7 @@ const Matches = () => {
     <Layout>
       <SEO
         title="Partite"
-        description="Lista risultati partite"
+        description="Segui tutti gli ultimi risultati delle partite del torneo."
       />
       {matches.map(({ node }) => (
         <Section key={`${node.frontmatter.home.team}-${node.frontmatter.visitor.team}`}>

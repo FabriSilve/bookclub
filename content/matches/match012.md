@@ -19,7 +19,7 @@ home:
   scoorers:
     - 'kane'
 visitor:
-  team: 'bayern-leverkusen'
+  team: 'bayer-leverkusen'
   goals: 1
   possession: 42
   shots: 9

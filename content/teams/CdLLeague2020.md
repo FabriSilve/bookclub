@@ -5,7 +5,7 @@ teams:
   - 'ajax'
   - 'arsenal'
   - 'atletico-madrid'
-  - 'bayern-leverkusen'
+  - 'bayer-leverkusen'
   - 'chelsea'
   - 'everton'
   - 'inter'

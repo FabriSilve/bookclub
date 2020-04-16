@@ -2,7 +2,7 @@ import none from '../images/emblems/none.png';
 import ajax from '../images/emblems/ajax.png';
 import arsenal from '../images/emblems/arsenal.png';
 import atleticoMadrid from '../images/emblems/atletico-madrid.png';
-import bayernLeverkusen from '../images/emblems/bayern-leverkusen.png';
+import bayerLeverkusen from '../images/emblems/bayer-leverkusen.png';
 import chelsea from '../images/emblems/chelsea.png';
 import everton from '../images/emblems/everton.png';
 import inter from '../images/emblems/inter.png';
@@ -19,7 +19,7 @@ const emblems = {
   'ajax': ajax,
   'arsenal': arsenal,
   'atletico-madrid': atleticoMadrid,
-  'bayern-leverkusen': bayernLeverkusen,
+  'bayer-leverkusen': bayerLeverkusen,
   'chelsea': chelsea,
   'everton': everton,
   'inter': inter,

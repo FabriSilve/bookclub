@@ -30,17 +30,17 @@ self.__precacheManifest = [
     "url": "webpack-runtime-d63b747b7f12b938bb4d.js"
   },
   {
-    "url": "commons-5d51d8540af8a517ccf9.js"
+    "url": "commons-c833f57930342216e649.js"
   },
   {
-    "url": "app-dbe3bde1e52ad60191a9.js"
+    "url": "app-f804b3d096929fd09264.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-481f03a4f5dd641d42b7.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "c82d362cc6cd75359e5993d2209fa714"
+    "revision": "1bf2ded0bc18b7063693c853e2d65f9c"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "055554c99d5ac0da0d6c53122e8de290"
+    "revision": "56541b7745f48ef315daf7b8abf3fdcb"
   },
   {
     "url": "manifest.webmanifest",
@@ -145,7 +145,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/bookclub/app-dbe3bde1e52ad60191a9.js`))) {
+  if (!resources || !(await caches.match(`/bookclub/app-f804b3d096929fd09264.js`))) {
     return await fetch(event.request)
   }
 

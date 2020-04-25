@@ -88,7 +88,7 @@ const IndexPage = () => {
     <Layout>
       <SEO
         title="Club del Libro | Per sole persone di cultura"
-        description={`Classifica torneo | № 1 ${formatTeamName(result.ladder[0])}`}
+        description={`Classifica torneo | № 1 ${formatTeamName(results[0].ladder[0].team)} (${results[0].ladder[0].points} pt.)`}
       />
       {results.map((result) => (
         <Section key={result.name}>

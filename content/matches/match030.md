@@ -2,7 +2,7 @@
 date: '2020-04-23'
 home:
   team: 'tottenham'
-  goals: '5'
+  goals: 5
   possession: 51
   shots: 13
   shotsIn: 9
@@ -23,7 +23,7 @@ home:
     - 'kane'
 visitor:
   team: 'lazio'
-  goals: '1'
+  goals: 1
   possession: 49
   shots: 11
   shotsIn: 5

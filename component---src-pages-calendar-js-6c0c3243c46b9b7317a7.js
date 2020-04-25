@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{JuWA:function(e,n,a){"use strict";a.r(n);var t=a("q1tI"),r=a.n(t),l=a("Bl7J"),i=a("vrFN");n.default=function(){return r.a.createElement(l.a,null,r.a.createElement(i.a,{title:"Calendario"}),r.a.createElement("h1",null,"Calendario Partite"),r.a.createElement("p",null,"Work in progress"))}}}]);
-//# sourceMappingURL=component---src-pages-calendar-js-6c0c3243c46b9b7317a7.js.map

@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{jfZ2:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),l=a.n(n),o=a("Bl7J"),r=a("kI8a");t.default=function(e){var t=e.pageContext;return l.a.createElement(o.a,null,l.a.createElement(r.a,{key:t.home.team+"-"+t.visitor.team},l.a.createElement("h1",null,t.home.team," vs ",t.visitor.team),l.a.createElement("h2",null,t.home.goals," - ",t.visitor.goals),l.a.createElement("h4",null,t.date)))}}}]);
-//# sourceMappingURL=component---src-templates-match-js-b714ce1f23f0e20fa112.js.map

@@ -83,8 +83,8 @@ const Results = (props) => {
               {matches.map((teams, i) => (
                 <StyledRow key={i}>
                   <StyledCel>{formatTeamName(teams[0])} vs {formatTeamName(teams[1])}</StyledCel>
-                  <StyledCel>{getMatchResult(teams[0], teams[1], allMatches)}</StyledCel>
-                  <StyledCel>{getMatchResult(teams[1], teams[0], allMatches)}</StyledCel>
+                  <StyledCel>{getMatchResult(teams[0], teams[1], allMatches).going}</StyledCel>
+                  <StyledCel>{getMatchResult(teams[0], teams[1], allMatches).back}</StyledCel>
                 </StyledRow>
               ))}
             </StyledGrid>

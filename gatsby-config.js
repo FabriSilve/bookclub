@@ -29,12 +29,12 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `ClubDelLibro`,
-        short_name: `CdL`,
+        short_name: `BookClub`,
         start_url: `/`,
         background_color: `#171a1c`,
         theme_color: `#171a1c`,
         display: `standalone`,
-        icon: `src/images/logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

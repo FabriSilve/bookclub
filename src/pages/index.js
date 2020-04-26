@@ -15,6 +15,7 @@ import useLeagues from '../hooks/useLeagues';
 import getLeaguesResult from '../utils/getLeaguesResult';
 import formatTeamName from '../utils/formatTeamName';
 import formatDate from '../utils/formatDate';
+// import getMedals from '../utils/getMedals';
 
 import trophy from '../images/trophy.png';
 
@@ -98,6 +99,7 @@ const IndexPage = () => {
   const leagues = useLeagues();
   const matches = useMatches();
   const results = getLeaguesResult(leagues, matches);
+  // getMedals(matches);
   return (
     <Layout>
       <SEO

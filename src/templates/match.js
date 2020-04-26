@@ -154,6 +154,23 @@ const Match = ({ pageContext }) => {
             <StyledCel>Parate</StyledCel>
             <StyledCel><h2>{pageContext.visitor.saves}</h2></StyledCel>
           </StyledRow>
+          <StyledRow>
+            <StyledCel>
+              <ul>
+                {pageContext.home.scoorers.map((scoorer) => (
+                  <li key={scoorer}>{scoorer.toUpperCase()}</li>
+                ))}
+              </ul>
+            </StyledCel>
+            <StyledCel>Marcatori</StyledCel>
+            <StyledCel>
+              <ul>
+                {pageContext.visitor.scoorers.map((scoorer) => (
+                  <li key={scoorer}>{scoorer.toUpperCase()}</li>
+                ))}
+              </ul>
+            </StyledCel>
+          </StyledRow>
         </StyledGrid>
       </Section>
     </Layout>

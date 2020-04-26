@@ -45,7 +45,12 @@ const getLeaguesResult = (leagues, matches) => {
         }, { team, points: 0, nMatches: 0, wins: 0, losts: 0, draws: 0, gDone: 0, gReceived: 0 });
         return teamResult;
       })
-      .sort((a, b) => b.points - a.points),
+      .sort((a, b) => {
+        if (b.points !== a.points) return b.points - a.points;
+        if (b.gDone !== a.gDone) return b.gDone - a.gDone;
+        if (b.gReceived !== a.gReceived) return b.gReceived - a.gReceived;
+        return b.nMatches - a.Matches;
+      }),
   }));
   return results;
 };

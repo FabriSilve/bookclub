@@ -19,7 +19,7 @@ home:
   scoorers:
     - 'dzeko'
 visitor:
-  team: 'manchester-utd'
+  team: 'manchester'
   goals: 0
   possession: 51
   shots: 2

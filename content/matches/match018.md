@@ -1,7 +1,7 @@
 ---
 date: '2020-04-16'
 home:
-  team: 'manchester-utd'
+  team: 'manchester'
   goals: 0
   possession: 44
   shots: 8
@@ -18,7 +18,7 @@ home:
   saves: 2
   scoorers: []
 visitor:
-  team: 'olympique-lyonnais'
+  team: 'lyonnais'
   goals: 1
   possession: 56
   shots: 7

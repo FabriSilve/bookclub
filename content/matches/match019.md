@@ -1,7 +1,7 @@
 ---
 date: '2020-04-16'
 home:
-  team: 'atletico-madrid'
+  team: 'madrid'
   goals: 2
   possession: 53
   shots: 6

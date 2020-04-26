@@ -18,7 +18,7 @@ home:
   saves:
   scoorers: []
 visitor:
-  team: 'bayer-leverkusen'
+  team: 'leverkusen'
   goals: 3
   possession:
   shots:

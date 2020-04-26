@@ -18,7 +18,7 @@ home:
   saves:
   scoorers: []
 visitor:
-  team: 'manchester-utd'
+  team: 'manchester'
   goals: 3
   possession:
   shots:

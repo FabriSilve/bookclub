@@ -19,7 +19,7 @@ home:
   scoorers:
     - 'carlos soler'
 visitor:
-  team: 'atletico-madrid'
+  team: 'madrid'
   goals: 4
   possession:
   shots:

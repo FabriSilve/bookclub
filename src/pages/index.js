@@ -106,9 +106,7 @@ const IndexPage = () => {
       />
       {results.map((result) => (
         <Section key={result.name}>
-          <StyledTrophy>
-            <img src={trophy} alt="trophy" />
-          </StyledTrophy>
+          <StyledTrophy><img src={trophy} alt="trophy" /></StyledTrophy>
           <StyledTitle>Torneo: {result.name}</StyledTitle>
           <StyledGrid>
             <StyledRow>

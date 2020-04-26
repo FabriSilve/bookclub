@@ -20,7 +20,7 @@ home:
     - 'callejon'
     - 'milik'
 visitor:
-  team: 'manchester-utd'
+  team: 'manchester'
   goals: 2
   possession: 45
   shots: 7

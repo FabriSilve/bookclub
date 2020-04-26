@@ -1,7 +1,7 @@
 ---
 date: '2020-04-05'
 home:
-  team: 'bayer-leverkusen'
+  team: 'leverkusen'
   goals: 3
   possession:
   shots:

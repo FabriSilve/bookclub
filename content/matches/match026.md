@@ -19,7 +19,7 @@ home:
   scoorers:
     - 'lucazette'
 visitor:
-  team: 'bayer-leverkusen'
+  team: 'leverkusen'
   goals: 3
   possession: 54
   shots: 13

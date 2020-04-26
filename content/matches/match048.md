@@ -1,7 +1,7 @@
 ---
 date: '2020-04-05'
 home:
-  team: 'manchester-utd'
+  team: 'manchester'
   goals: 3
   possession:
   shots:

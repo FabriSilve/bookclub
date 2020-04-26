@@ -1,7 +1,7 @@
 ---
 date: '2020-04-22'
 home:
-  team: 'manchester-utd'
+  team: 'manchester'
   goals: 1
   possession: 38
   shots: 4

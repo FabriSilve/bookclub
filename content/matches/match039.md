@@ -1,7 +1,7 @@
 ---
 date: '2020-04-05'
 home:
-  team: 'atletico-madrid'
+  team: 'madrid'
   goals: 3
   possession:
   shots:

@@ -22,7 +22,7 @@ home:
    - 'q. promes'
    - 'q. promes'
 visitor:
-  team: 'atletico-madrid'
+  team: 'madrid'
   goals: 1
   possession: 44
   shots: 6

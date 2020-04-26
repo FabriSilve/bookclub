@@ -156,17 +156,17 @@ const Match = ({ pageContext }) => {
           </StyledRow>
           <StyledRow>
             <StyledCel>
-              <ul>
+              <ul style={{ margin: 0}}>
                 {pageContext.home.scoorers.map((scoorer) => (
-                  <li key={scoorer}>{scoorer.toUpperCase()}</li>
+                  <li key={scoorer}><h3 style={{ margin: 0}}><strong>{scoorer.toUpperCase()}</strong></h3></li>
                 ))}
               </ul>
             </StyledCel>
             <StyledCel>Marcatori</StyledCel>
             <StyledCel>
-              <ul>
+              <ul style={{ margin: 0}}>
                 {pageContext.visitor.scoorers.map((scoorer) => (
-                  <li key={scoorer}>{scoorer.toUpperCase()}</li>
+                  <li key={scoorer}><h3 style={{ margin: 0}}><strong>{scoorer.toUpperCase()}</strong></h3></li>
                 ))}
               </ul>
             </StyledCel>

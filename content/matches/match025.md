@@ -17,8 +17,8 @@ home:
   tackels: 3
   saves: 2
   scoorers:
-    - 'j. claaejón'
-    - 'a. milik'
+    - 'callejon'
+    - 'milik'
 visitor:
   team: 'manchester-utd'
   goals: 2
@@ -36,6 +36,6 @@ visitor:
   tackels: 8
   saves: 1
   scoorers:
-    - 'j. lingard'
-    - 'h. maguire'
+    - 'lingard'
+    - 'maguire'
 ---

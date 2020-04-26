@@ -16,9 +16,7 @@ home:
   passagesIntercepted: 34
   tackels: 4
   saves: 3
-  scoorers:
-    - 'willian'
-    - 'pedro'
+  scoorers: []
 visitor:
   team: 'chelsea'
   goals: 2
@@ -35,5 +33,7 @@ visitor:
   passagesIntercepted: 41
   tackels: 5
   saves: 4
-  scoorers: []
+  scoorers:
+    - 'willian'
+    - 'pedro'
 ---

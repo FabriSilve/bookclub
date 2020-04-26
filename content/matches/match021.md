@@ -17,7 +17,7 @@ home:
   tackels: 2
   saves: 7
   scoorers:
-    - 'lutaro'
+    - 'lautaro'
 visitor:
   team: 'tottenham'
   goals: 4

@@ -17,9 +17,9 @@ home:
   tackels: 5
   saves: 1
   scoorers:
-    - 'giround'
-    - 'giround'
-    - 'giround'
+    - 'giroud'
+    - 'giroud'
+    - 'giroud'
 visitor:
   team: 'arsenal'
   goals: 0

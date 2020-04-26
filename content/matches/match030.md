@@ -21,6 +21,7 @@ home:
     - 'son'
     - 'kane'
     - 'kane'
+    - 'kane'
 visitor:
   team: 'lazio'
   goals: 1

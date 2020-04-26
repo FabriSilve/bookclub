@@ -18,7 +18,7 @@ home:
   saves: 3
   scoorers: []
 visitor:
-  team: 'olymnpique-lyonnais'
+  team: 'olympique-lyonnais'
   goals: 1
   possession: 49
   shots: 6

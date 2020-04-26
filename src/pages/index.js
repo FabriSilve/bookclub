@@ -16,6 +16,20 @@ import getLeaguesResult from '../utils/getLeaguesResult';
 import formatTeamName from '../utils/formatTeamName';
 import formatDate from '../utils/formatDate';
 
+import trophy from '../images/trophy.png';
+
+
+const StyledTrophy = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 15rem;
+  img {
+    width: auto;
+    height: 100%;
+  }
+`;
 
 const StyledCel = styled.span`
   padding: 0.5rem;
@@ -92,6 +106,9 @@ const IndexPage = () => {
       />
       {results.map((result) => (
         <Section key={result.name}>
+          <StyledTrophy>
+            <img src={trophy} alt="trophy" />
+          </StyledTrophy>
           <StyledTitle>Torneo: {result.name}</StyledTitle>
           <StyledGrid>
             <StyledRow>
